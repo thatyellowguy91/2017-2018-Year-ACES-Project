@@ -12,10 +12,10 @@ globals [
 
 to setup
   clear-all
-  set-default-shape reactants "NO2"
-  set-default-shape products "N2O4"
+  set-default-shape reactants "4NH3 + 7O2"
+  set-default-shape products "4NO2 + 6H2O"
   draw-box                                 ;; draws the reaction container
-  create-reactants 200                     ;; generates reactants
+  create- 2                     ;; generates reactants
     [ set color green
       move-to one-of black-patches ]       ;; distribute reactants around the world
   update-concentrations
@@ -104,7 +104,7 @@ to add-reactant
 end
 
 to add-product
-  create-products 20
+  create-products 1
     [ set color red
       move-to one-of black-patches ]
 end
@@ -214,7 +214,7 @@ edge-size
 edge-size
 1
 10
-1.0
+0.0
 1
 1
 NIL
@@ -240,7 +240,7 @@ Kb
 Kb
 0
 10
-10.0
+0.0
 0.1
 1
 NIL
@@ -255,7 +255,7 @@ Ku
 Ku
 0
 100
-20.0
+0.0
 1
 1
 NIL
@@ -304,7 +304,7 @@ temp
 temp
 -200
 200
-200.0
+0.0
 1
 1
 deg C
